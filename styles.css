@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #222;
+}
+
+.cardBody {
+  border: 1px solid cyan;
+  background-color: #fff;
+  border-radius: 2vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: fit-content; /* Adjust width to fit content */
+  max-width: 90%; /* Set maximum width to prevent it from stretching too wide */
+  margin: 10% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  max-height: 80vh;
+  transition: box-shadow 0.4s, transform 0.4s; /* Add transition without hover */
+}
+
+.cardBody:hover {
+  box-shadow: 0 8px 16px cyan, 0 -8px 16px cyan, -8px 0 16px cyan,
+    8px 0 16px cyan;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.cardImage {
+  width: 40vh;
+  min-width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.cardTitle {
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #222;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+}
+
+.cardText {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 20px;
+  max-width: 30vh;
+  margin: 0 auto;
+  display: block;
+  padding: 2vh;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.cardButton {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cardButton:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+  .cardImage {
+    width: 300px;
+  }
+
+  .cardTitle {
+    font-size: 1.5em;
+  }
+
+  .cardText {
+    font-size: 1em;
+  }
+
+  .cardButton {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cardImage {
+    width: 200px;
+  }
+
+  .cardTitle {
+    font-size: 1.3em;
+  }
+
+  .cardText {
+    font-size: 0.9em;
+  }
+
+  .cardButton {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cardImage {
+    width: 100px;
+  }
+
+  .cardTitle {
+    font-size: 1.2em;
+  }
+
+  .cardText {
+    font-size: 0.9em;
+  }
+
+  .cardButton {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardTitle {
+    font-size: 1em;
+  }
+
+  .cardText {
+    font-size: 0.8em;
+  }
+
+  .cardButton {
+    padding: 6px 12px;
+  }
+}
